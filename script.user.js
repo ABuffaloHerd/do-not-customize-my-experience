@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Fuck off "Please help us cuztomize your experience"
+// @name        "Please help us cuztomize your experience" deletor
 // @namespace   Violentmonkey Scripts
 // @match       *://*.fandom.com/*
 // @grant       none
@@ -11,13 +11,11 @@
 (function() {
     'use strict';
 
-    // Change 'div-class-to-remove' to the class you want to remove.
+    // Change 'div-class-to-remove' to the class you want to remove. thanks chatgpt
     let id = 'age-gate';
 
     window.addEventListener('load', function() {
         let element = document.getElementById(id);
         element.remove();
-
-      console.log("FUCK OFF CUSTOMIZER");
     }, false);
 })();
